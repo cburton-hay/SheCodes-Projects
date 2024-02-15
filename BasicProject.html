@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Miley Cyrus</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #acc6aa 0%, #71a0a5 100%);
+        font-family: "Franklin Gothic Medium", "Arial", Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #acc6aa;
+        border-radius: 30px;
+        padding: 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        text-align: center;
+      }
+      p {
+        line-height: 1.5;
+        margin: 15px;
+      }
+      span {
+        text-decoration: underline;
+      }
+      ul {
+        margin: auto;
+        list-style-type: none;
+        text-align: center;
+        padding: 10px;
+      }
+      button {
+        display: block;
+        margin: 10px auto;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+
+      button :hover {
+        cursor: pointer;
+        opacity: 0.9;
+        background-color: #bed6cd;
+      }
+
+      .wikipedia {
+        display: block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: black;
+        margin: 15px;
+      }
+      .wikipedia :hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      div {
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+        margin: 10px;
+        text-align: center;
+        padding: 15px;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Miley Cyrus - Used To Be Young</h1>
+    <h2>Out August 25th</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/998/original/image_for_project.jpeg?1694010714"
+      alt="Miley wet hair look"
+      width="500"
+    />
+    <p>
+      After her incredibly successful album release 'Endless Summer Vacation'
+      earlier this year, Miley has been teasing fans with cryptic messages
+      posters. She has now announced that she is releasing a new single aptly
+      named
+      <span><strong>'Used to be Young' on Friday 25th August</strong></span
+      >. This coinsides with another inverview release that dives into her
+      childhood and growing up as a Disney star and unpickig moments from her
+      past.
+      <br />
+    </p>
+    <ul>
+      The song expected to challenge for the
+      <em>number 1</em>
+      spot across the world including:
+      <li>USA</li>
+      <li>Canada</li>
+      <li>Autralia</li>
+      <li>Norway</li>
+      <li>Ireland</li>
+    </ul>
+    <hr />
+    <a
+      href="https://en.wikipedia.org/wiki/Miley_Cyrus"
+      target="_blank"
+      class="wikipedia"
+    >
+      Find out more on Wikipedia.
+    </a>
+    <button>Buy merchendise</button>
+
+    <div>
+      This page was built by
+      <a
+        href="https://www.linkedin.com/in/catriona-burton-hay-310b1310b/"
+        target="_blank"
+        class="linkedin"
+      >
+        Cat Burton-Hay
+      </a>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("what is your email address?");
+        let age = prompt("How old are you?");
+        if (age < 16) {
+          alert("You need the bill payer's permission.");
+        } else {
+        }
+        alert(
+          "Thank you, " +
+            name +
+            ". You will be sent an email with a discount offer for 10% off Miley Cyrus Official Store merchendise."
+        );
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
